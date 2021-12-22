@@ -1,0 +1,16 @@
+runtime: nodejs16
+
+env_variables:
+  REACT_APP_USER_ID: "user_sI6OHl2gPmtOoCyZiA0Tw"
+  REACT_APP_SERVICE_ID: "service_dcipdbe"
+  REACT_APP_TEMPLATE_ID: "template_5jcmb3h"
+
+handlers:
+# Serve all static files with url ending with a file extension
+- url: /(.*\..+)$
+  static_files: build/\1
+  upload: build/(.*\..+)$
+# Catch all handler to index.html
+- url: /.*
+  static_files: build/index.html
+  upload: build/index.html

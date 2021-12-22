@@ -1,9 +1,17 @@
 import React from "react";
+import emailjs from 'emailjs-com'
+import {ChatIcon} from "@heroicons/react/solid"
+import '@sweetalert2/theme-dark'
+import Swal from 'sweetalert2/src/sweetalert2.js'
 
 export default function Contact() {
-  const [name, setName] = React.useState("");
-  const [email, setEmail] = React.useState("");
+  const [from_name, setName] = React.useState("");
+  const [reply_to, setEmail] = React.useState("");
   const [message, setMessage] = React.useState("");
+
+  const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
+  const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
+  const USER_ID = process.env.REACT_APP_USER_ID;
 
   function encode(data) {
     return Object.keys(data)
@@ -15,38 +23,36 @@ export default function Contact() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    fetch("/contactform", {
-      method: "POST",
-      body: encode({ name, email, message }),
-    })
-      .then(() => alert("Message sent!"))
-      .catch((error) => alert(error));
-  }
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
+      .then((res) => {
+        console.log(res.text);
+        Swal.fire({
+          icon: 'success',
+          title: "Message Sent Successfully"
+        })
+      }, (error) => {
+        console.log(error.text)
+        Swal.fire({
+          icon:'error',
+          title:'Something Went Wrong',
+          text: error.text
+        })
+      });
+    e.target.reset();
+  };
 
   return (
     <section id="contact" className="relative">
-      <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
-        <div className="lg:w-1/2 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
-          <iframe
-            width="100%"
-            height="100%"
-            title="map"
-            className="absolute inset-0"
-            frameBorder={0}
-            marginHeight={0}
-            marginWidth={0}
-            style={{ filter: "opacity(1)" }}
-            src="https://www.google.com/maps/embed/v1/place?q=Uiniversity+of+Texas+Austin&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
-          />
-        </div>
+      <div className="container px-5 py-10 mx-auto lg:px-40 items-center">
+        <ChatIcon className="mx-auto flex w-10 mb-4"/>
         <form
           name="contact"
           onSubmit={handleSubmit}
-          className="lg:w-1/2 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
-          <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
+          className="">
+          <h2 className="text-white text-center sm:text-4xl text-3xl mb-1 font-medium title-font">
             Contact Me
           </h2>
-          <p className="leading-relaxed mb-5">
+          <p className="text-center leading-relaxed mb-5">
             If you want to contact me just send an email I would love to talk.
             Hopefully, it won't get sent to junk JK :p.
           </p>
@@ -56,8 +62,8 @@ export default function Contact() {
             </label>
             <input
               type="text"
-              id="name"
-              name="name"
+              id="from_name"
+              name="from_name"
               className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               onChange={(e) => setName(e.target.value)}
             />
@@ -68,8 +74,8 @@ export default function Contact() {
             </label>
             <input
               type="email"
-              id="email"
-              name="email"
+              id="reply_to"
+              name="reply_to"
               className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               onChange={(e) => setEmail(e.target.value)}
             />

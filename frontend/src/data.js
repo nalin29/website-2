@@ -28,7 +28,7 @@ export const projects = [
     subtitle: "Showcase BWI Project",
     description:
       "Using previous data extrapolate gaze correlation with movement and if possible try to train a virtual agent such that it can read the gaze cues of a person in the VR environment and clone the behavior of a normal human.",
-    image: "./vr.jpg",
+    image: "./vr.gif",
     link: "#projects",
   },
   {
@@ -36,7 +36,7 @@ export const projects = [
     subtitle: "Showcase Reinforcement Learning",
     description:
       "A reinforcement agent that learned to estimate the value of certain action state pairs by manipulating weights of hand coded features. This was then used to populate and expectimax tree. This resulted in a fifth place sumbission.",
-    image: "./pacman.png",
+    image: "./pacman.gif",
     link: "https://github.com/nalin29/AI_Contest",
   },
   {
@@ -47,6 +47,22 @@ export const projects = [
     image: "./tuxkart.gif",
     link: "https://github.com/nalin29/nn_final",
   },
+  {
+    title: "Stroke Classification",
+    subtitle: "Showcase Data Mining",
+    description:
+      "This is a python notebook showcasing a full pipeline of data cleaning, feature creation and classification. Primarily, utilizes scipy and covers a wide variety of models for classification. In this Notebook we perform classification using KNN, SVM and Trees.",
+    image: "./data-mining.png",
+    link: "https://github.com/vineeth-bandi/datamining-project",
+  },
+  {
+    title: "NBAToday Website",
+    subtitle: "Showcase React, Flask and PostgreSQL",
+    description:
+      "A website designed to show interesting stats for the NBA. This contains a react frontend. The data is stored in a PostegreSQL database. This is distributed using a fully fledged and documented API served by a Flask Backend.",
+    image: "./nba.png",
+    link: "https://gitlab.com/mmishra14/cs373-idb",
+  }
 ];
 
 export const testimonials = [
@@ -76,5 +92,7 @@ export const skills = [
   "Pytorch",
   "SpringBoot",
   "Tomcat/Apache Servers",
-  "Gradle"
+  "Gradle",
+  "AWS",
+  "GCP"
 ];

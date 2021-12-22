@@ -5,9 +5,14 @@
   "dependencies": {
     "@craco/craco": "^5.9.0",
     "@heroicons/react": "^1.0.1",
+    "@sweetalert2/theme-dark": "^5.0.8",
+    "emailjs-com": "^3.2.0",
+    "mime": "^3.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "^1.1.5",
+    "react-icons": "^4.3.1",
+    "react-scripts": "^2.1.2",
+    "sweetalert2": "^11.3.0",
     "yarn": "^1.22.17"
   },
   "scripts": {
@@ -26,5 +31,10 @@
     "autoprefixer": "^9.8.6",
     "postcss": "^7.0.36",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
