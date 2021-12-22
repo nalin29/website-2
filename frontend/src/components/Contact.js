@@ -42,7 +42,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="relative">
+    <section id="contact" className="text-gray-400 bg-gray-900 body-font">
       <div className="container px-5 py-10 mx-auto lg:px-40 items-center">
         <ChatIcon className="mx-auto flex w-10 mb-4"/>
         <form
