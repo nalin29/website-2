@@ -1,22 +1,20 @@
 
 import React from "react";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Navbar from "./components/Navbar";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
-import Testimonials from "./components/Testimonials";
-import Experiences from "./components/Experiences"
+import Home from './Home'
+import NoPage from "./components/NoPage";
+import {Route, Link, BrowserRouter, Routes, Navigate} from 'react-router-dom'
 
 export default function App() {
   return (
-    <main className="text-gray-400 bg-gray-900 body-font">
-      <Navbar />
-      <About />
-      <Experiences />
-      <Projects />
-      <Skills />
-      <Contact />
-    </main>
+      <BrowserRouter>
+        <main className="text-gray-400 bg-gray-900 body-font">
+          <Routes>
+            <Route path="/" element={<Home/>}/>
+            <Route path="/home" element={<Navigate to="/"/>}/>
+            <Route path="/index" element={<Navigate to="/"/>}/>
+            <Route path="*" element={<NoPage></NoPage>}/>
+          </Routes>
+        </main>
+      </BrowserRouter>
   );
 }
