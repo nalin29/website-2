@@ -1,5 +1,13 @@
 export const projects = [
   {
+    title: "TuxKart Ice Hockey Image Agent",
+    subtitle: "Showcase Image detection",
+    description:
+      "An agent that was trained using an FCN to mask out the puck and detect the center. This was combined with a hand made controller. As a result the agent successfully beat the competing agents. Scoring goals in almost every match.",
+    image: "./tuxkart.gif",
+    link: "https://github.com/nalin29/nn_final",
+  },
+  {
     title: "CNN Fruit Classifier",
     subtitle: "Keras Showcase",
     description:
@@ -14,14 +22,6 @@ export const projects = [
       "An application that runs using the ROS framework that compresses a depth camera output. The color data is compressed using standard compression techniques. The depth data is compressed using a custom lz4. This is reconstructed into a point cloud.",
     image: "./compression_node.png",
     link: "https://github.com/nalin29/compress_point_cloud",
-  },
-  {
-    title: "Old Website",
-    subtitle: "Showcase of Express and PugJS",
-    description:
-      "I have created this website from scratch. The website uses nodejs as a web server and serves content using an express middleware. In addition the contact system below uses the nodemailer library to send e-mails and Send-Grid is the email service provider.",
-    image: "./website.jpg",
-    link: "https://github.com/nalin29/website",
   },
   {
     title: "VR Hallway Experiment",
@@ -40,12 +40,12 @@ export const projects = [
     link: "https://github.com/nalin29/AI_Contest",
   },
   {
-    title: "TuxKart Ice Hockey Image Agent",
-    subtitle: "Showcase Image detection",
+    title: "Old Website",
+    subtitle: "Showcase of Express and PugJS",
     description:
-      "An agent that was trained using an FCN to mask out the puck and detect the center. This was combined with a hand made controller. As a result the agent successfully beat the competing agents. Scoring goals in almost every match.",
-    image: "./tuxkart.gif",
-    link: "https://github.com/nalin29/nn_final",
+      "I have created this website from scratch. The website uses nodejs as a web server and serves content using an express middleware. In addition the contact system below uses the nodemailer library to send e-mails and Send-Grid is the email service provider.",
+    image: "./website.jpg",
+    link: "https://github.com/nalin29/website",
   },
   {
     title: "Stroke Classification",
