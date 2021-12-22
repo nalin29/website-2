@@ -1,7 +1,7 @@
 
 import React from "react";
-import Home from './Home'
-import NoPage from "./components/NoPage";
+import Home from './pages/Home'
+import NoPage from "./pages/NoPage";
 import {Route, Link, BrowserRouter, Routes, Navigate} from 'react-router-dom'
 
 export default function App() {
