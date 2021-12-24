@@ -5,7 +5,7 @@ export const projects = [
     description:
       "An agent that was trained using an FCN to mask out the puck and detect the center. This was combined with a hand made controller. As a result the agent successfully beat the competing agents. Scoring goals in almost every match.",
     image: "./tuxkart.gif",
-    link: "https://github.com/nalin29/nn_final",
+    link: "/projects/0",
   },
   {
     title: "CNN Fruit Classifier",
@@ -13,7 +13,7 @@ export const projects = [
     description:
       "Exploration into CNN classification using the Keras API and fruit-360 dataset from Kaggle. In this project using the Tensorflow Keras API I create a series of CNN models and evaluated the best one on the Fruit-360 dataset from Kaggle ",
     image: "./fruitClassifier.png",
-    link: "https://github.com/nalin29/Fruit-Classification-Project",
+    link: "/projects/1",
   },
   {
     title: "Point Cloud Stream Compression",
@@ -21,7 +21,7 @@ export const projects = [
     description:
       "An application that runs using the ROS framework that compresses a depth camera output. The color data is compressed using standard compression techniques. The depth data is compressed using a custom lz4. This is reconstructed into a point cloud.",
     image: "./compression_node.png",
-    link: "https://github.com/nalin29/compress_point_cloud",
+    link: "/projects/2",
   },
   {
     title: "VR Hallway Experiment",
@@ -29,7 +29,7 @@ export const projects = [
     description:
       "Using previous data extrapolate gaze correlation with movement and if possible try to train a virtual agent such that it can read the gaze cues of a person in the VR environment and clone the behavior of a normal human.",
     image: "./vr.gif",
-    link: "#projects",
+    link: "/projects/5",
   },
   {
     title: "Pacman Q-Learning",
@@ -37,7 +37,7 @@ export const projects = [
     description:
       "A reinforcement agent that learned to estimate the value of certain action state pairs by manipulating weights of hand coded features. This was then used to populate and expectimax tree. This resulted in a fifth place sumbission.",
     image: "./pacman.gif",
-    link: "https://github.com/nalin29/AI_Contest",
+    link: "/projects/7",
   },
   {
     title: "Old Website",
@@ -45,7 +45,7 @@ export const projects = [
     description:
       "I have created this website from scratch. The website uses nodejs as a web server and serves content using an express middleware. In addition the contact system below uses the nodemailer library to send e-mails and Send-Grid is the email service provider.",
     image: "./website.jpg",
-    link: "https://github.com/nalin29/website",
+    link: "/projects/4",
   },
   {
     title: "Stroke Classification",
@@ -53,7 +53,7 @@ export const projects = [
     description:
       "This is a python notebook showcasing a full pipeline of data cleaning, feature creation and classification. Primarily, utilizes scipy and covers a wide variety of models for classification. In this Notebook we perform classification using KNN, SVM and Trees.",
     image: "./data-mining.png",
-    link: "https://github.com/vineeth-bandi/datamining-project",
+    link: "/projects/3",
   },
   {
     title: "NBAToday Website",
@@ -61,7 +61,7 @@ export const projects = [
     description:
       "A website designed to show interesting stats for the NBA. This contains a react frontend. The data is stored in a PostegreSQL database. This is distributed using a fully fledged and documented API served by a Flask Backend.",
     image: "./nba.png",
-    link: "https://gitlab.com/mmishra14/cs373-idb",
+    link: "/projects/6",
   }
 ];
 
