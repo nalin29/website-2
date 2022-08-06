@@ -44,11 +44,12 @@ export default function Experiences() {
                         <IdentificationIcon className="text-cyan-500 w-6 h-6 flex-shrink-0 mr-4" />
                         <span>
                            <div className="title-font font-medium text-white">
-                              Incoming SDE Intern Amazon 2022
+                              SDE Intern Amazon 2022
                            </div>
                            <div>
-                              I have accepted an offer to onboard as a Software Development Enginneer Intern at Amazon Summer 2022. 
-                              Stay tuned to see what I will accomplish.
+                              Implemented and tested production ready and highly requested features for 
+                              Application Load Balancer as an intern for the Elastic Load Balancing team. 
+                              Utilized low level networking constructs with emphasis on TCP/TLS and the HTTP/2 protocols.
                            </div>
                         </span>
                      </div>

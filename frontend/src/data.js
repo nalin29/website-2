@@ -3,9 +3,16 @@ export const projects = [
     title: "TuxKart Ice Hockey Image Agent",
     subtitle: "Showcase Image detection",
     description:
-      "An agent that was trained using an FCN to mask out the puck and detect the center. This was combined with a hand made controller. As a result the agent successfully beat the competing agents. Scoring goals in almost every match.",
+      "An agent that was trained using an FCN to mask out the puck and detect the center. This was combined with a hand made controller. As a result the agent successfully beat the competing agents. Scoring goals in almost every match allowing us to place top 10.",
     image: "./tuxkart.gif",
     link: "/projects/0",
+  },
+  {
+    title: "Smoothed Particle Hydrodynamics Simulation",
+    subtitle: "Showcase Fluid Simulation",
+    description: "A class project to implement Smoothed Particle Hydrodynamics. This is a way of simulating fluids by representing them as discrete particles. Then calculating the force of pressure and gravity using the nearby kernel of particles. This demo is of a simplistic version of that.",
+    image: "./sph.gif",
+    link: "./sph.pdf"
   },
   {
     title: "CNN Fruit Classifier",
@@ -62,6 +69,13 @@ export const projects = [
       "A website designed to show interesting stats for the NBA. This contains a react frontend. The data is stored in a PostegreSQL database. This is distributed using a fully fledged and documented API served by a Flask Backend.",
     image: "./nba.png",
     link: "/projects/6",
+  },
+  {
+    title: "Asynchronous Copy",
+    subtitle: "Showcase Asynchronous I/O",
+    description: "A final project to create a faster version of cp -r by using asynchronous IO. For this project I leveraged the original aio library. I then compared it to an version with the new kernel level io_uring library.",
+    image: "./aio.png",
+    link: "./aio.pdf"
   }
 ];
 
@@ -90,9 +104,11 @@ export const skills = [
   "Python",
   "C/C++",
   "Pytorch",
+  "Tensorflow",
   "SpringBoot",
   "Tomcat/Apache Servers",
   "Gradle",
   "AWS",
-  "GCP"
+  "GCP",
+  "Nginx"
 ];
