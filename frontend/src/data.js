@@ -12,7 +12,7 @@ export const projects = [
     subtitle: "Showcase Fluid Simulation",
     description: "A class project to implement Smoothed Particle Hydrodynamics. This is a way of simulating fluids by representing them as discrete particles. Then calculating the force of pressure and gravity using the nearby kernel of particles. This demo is of a simplistic version of that.",
     image: "./sph.gif",
-    link: "./sph.pdf"
+    link: "/projects/9"
   },
   {
     title: "CNN Fruit Classifier",
@@ -75,7 +75,7 @@ export const projects = [
     subtitle: "Showcase Asynchronous I/O",
     description: "A final project to create a faster version of cp -r by using asynchronous IO. For this project I leveraged the original aio library. I then compared it to an version with the new kernel level io_uring library.",
     image: "./aio.png",
-    link: "./aio.pdf"
+    link: "/projects/8"
   }
 ];
 

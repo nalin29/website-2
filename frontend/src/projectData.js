@@ -615,5 +615,61 @@ export const ProjectData = [
             Q-Learning was run for several hundred rounds against the provided AI and across several maps. Then hand made tweaks were made to some of the features to improve performance. The result was a fifth place finish and a decent Q-learning reinforcement agent.
          </div>
       )
+   },
+   {
+      id: 8,
+      title: "AIO File Copy",
+      body: (
+         <div className="w-full h-full">
+            The project was a final project for the Graduate course in Advanced Operating Systems. The project implements recursive file copy by utilizing asynchronous I/O. The goal is to be able to utilize the ability to execute many writes/reads in parallel and for multiple files in parallel thus reducing time. 
+            This was accomplished first by using the slower and older aio library in Glib which executes in user-space. Then we implemented the same idea using the new io_uring library which allows for zero-copy asynchrounous I/O using syscall. 
+            See the repository here: &nbsp;
+            <a className="mr-5 underline hover:text-white" href="https://github.com/nalin29/copy_async">
+               https://github.com/nalin29/copy_async
+            </a>
+            <br />
+            <br />
+         <div className="h-screen">
+            <object data="/aio.pdf#view=FitH" type="application/pdf" width="100%" height="85%" className="object-contain mx-auto">
+               <p>No online PDF viewer installed click here: <a href="/aio.pdf">aio.pdf</a> </p>
+            </object>
+         </div>
+         </div>
+      )
+   },
+   {
+      id: 9,
+      title: "Smoothed Particle Hydrodynamics",
+      body: (
+         <div className="w-full h-full">
+            This was a final project for the Graduate Physical Simulation class. In this demo I have implemented a basic verson of SPH. 
+            Fluid is represented by these particles and we calculate the necessary forces on the fluid such as pressure and gravity by
+            taking a sample at each particle. We then weight the sample utilzing a kernel and then we can use the specified equation to calculate
+            the forces of pressure, viscosity and gravity. Then we can apply time integraton to get the next time step
+            See the repository here: &nbsp;
+            <a className="mr-5 underline hover:text-white" href="https://github.com/nalin29/sph_final">
+               https://github.com/nalin29/sph_final
+            </a>
+            <br />
+            <br />
+            <div className="p-4">
+               <img
+                  alt="gallery"
+                  className="object-contain mx-auto"
+                  src={"/sph.gif"}
+               />
+               <div className="p-2">
+                  <h1 className="title-font text-lg font-small text-white mb-1 text-center">
+                     Demo
+                  </h1>
+               </div>
+            </div>
+         <div className="h-screen">
+            <object data="/sph.pdf#view=FitH" type="application/pdf" width="100%" height="85%" className="object-contain mx-auto">
+               <p>No online PDF viewer installed click here: <a href="/sph.pdf">sph.pdf</a> </p>
+            </object>
+         </div>
+         </div>
+      )
    }
 ]
