@@ -629,11 +629,15 @@ export const ProjectData = [
             </a>
             <br />
             <br />
-         <div className="h-screen">
-            <object data="/aio.pdf#view=FitH" type="application/pdf" width="100%" height="85%" className="object-contain mx-auto">
-               <p>No online PDF viewer installed click here: <a href="/aio.pdf">aio.pdf</a> </p>
-            </object>
-         </div>
+            <div className="h-screen">
+               <iframe
+                     src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://nalinmahajan.net/aio.pdf#toolbar=0&scrollbar=0"
+                     frameBorder="0"
+                     scrolling="auto"
+                     height="85%"
+                     width="100%"
+               ></iframe>
+            </div>
          </div>
       )
    },
@@ -664,11 +668,15 @@ export const ProjectData = [
                   </h1>
                </div>
             </div>
-         <div className="h-screen">
-            <object data="/sph.pdf#view=FitH" type="application/pdf" width="100%" height="85%" className="object-contain mx-auto">
-               <p>No online PDF viewer installed click here: <a href="/sph.pdf">sph.pdf</a> </p>
-            </object>
-         </div>
+            <div className="h-screen">
+               <iframe
+                  src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://nalinmahajan.net/sph.pdf#toolbar=0&scrollbar=0"
+                  frameBorder="0"
+                  scrolling="auto"
+                  height="85%"
+                  width="100%"
+               ></iframe>
+            </div>
          </div>
       )
    }
