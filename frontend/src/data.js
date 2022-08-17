@@ -73,7 +73,7 @@ export const projects = [
   {
     title: "Asynchronous Copy",
     subtitle: "Showcase Asynchronous I/O",
-    description: "A final project to create a faster version of cp -r by using asynchronous IO. For this project I leveraged the original aio library. I then compared it to an version with the new kernel level io_uring library.",
+    description: "A final project to create a faster version of cp -r by using asynchronous IO. For this project I leveraged the original linux aio library. I then compared it to an version with the new kernel level io_uring library including several optimizations.",
     image: "./aio.png",
     link: "/projects/8"
   }

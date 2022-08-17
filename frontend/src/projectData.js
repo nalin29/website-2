@@ -631,7 +631,7 @@ export const ProjectData = [
             <br />
             <div className="h-screen">
                <iframe
-                     src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://nalinmahajan.net/aio.pdf#toolbar=0&scrollbar=0"
+                     src="https://drive.google.com/viewerng/viewer?embedded=true&url=nalinmahajan.com/aio.pdf#toolbar=0&scrollbar=0"
                      frameBorder="0"
                      scrolling="auto"
                      height="85%"
@@ -670,7 +670,7 @@ export const ProjectData = [
             </div>
             <div className="h-screen">
                <iframe
-                  src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://nalinmahajan.net/sph.pdf#toolbar=0&scrollbar=0"
+                  src="https://drive.google.com/viewerng/viewer?embedded=true&url=nalinmahajan.com/sph.pdf#toolbar=0&scrollbar=0"
                   frameBorder="0"
                   scrolling="auto"
                   height="85%"
